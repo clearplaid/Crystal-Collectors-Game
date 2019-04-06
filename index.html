@@ -6,40 +6,81 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    
 </head>
 <body>
     <div id="game">
-        <h1 id="header">Crystal Collectors</h1>
+        <h1 id="header" class="container-fluid text-center p-3 mb-2 bg-success text-white font-weight-bold">Crystal Collectors</h1>
 
-        <div id="instructions">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game begins, the game will change the value of each crystal.</p>
-            <p>Good luck and may the odds (or evens) be ever in your favor!</p>
+        <div id="instructions" class="container-fluid mt-2">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>You will be given a random number at the start of the game.</p>
+                            <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                            <p>The value of each crystal is hidden from you until you click on it.</p>
+                            <p>Each time when the game begins, the game will change the value of each crystal.</p>
+                            <p>Good luck and may the odds (or evens) be ever in your favor!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
         </div>
-        <div id="number-to-match"></div>
-        <div id="tally">
-            <p id="wins">Wins: 0</p>
-            <p id="losses">Losses: 0</p>
+
+        <div class="container-fluid">
+            <div class="row mt-2">
+                <div class="col-2"></div>
+
+                    <div class="col-3 card text-center">
+                        <div class="card-body">
+                            <div id="number-to-match" class="font-weight-bold "></div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div id="tally" class="col-3 card text-center">
+                        <div class="card-body">
+                            <p id="wins">Wins: 0</p>
+                            <p id="losses">Losses: 0</p>
+                        </div>
+                    </div>
+               
+            </div>
         </div>
-        <div id="crystals">
-            <img src="assets/images/crystal_green.jpg" id="crystal1" alt="crystal 1">
-            <img src="assets/images/crystal_purple.jpg" id="crystal2" alt="crystal 2">
-            <img src="assets/images/crystal_orange.jpg" id="crystal3" alt="crystal 3">
-            <img src="assets/images/crystal_pink.jpg" id="crystal4" alt="crystal 4">
+
+        <div id="crystals" class="container-fluid mt-2">
+            <div class="row">
+                <div class="col-3">
+                    <img src="assets/images/crystal_green.jpg" id="crystal1" alt="crystal 1" class=".img-fluid img-thumbnail">
+                </div>
+                <div class="col-3">
+                    <img src="assets/images/crystal_purple.jpg" id="crystal2" alt="crystal 2" class=".img-fluid img-thumbnail">
+                </div>
+                <div class="col-3">
+                    <img src="assets/images/crystal_orange.jpg" id="crystal3" alt="crystal 3" class=".img-fluid img-thumbnail">
+                </div>
+                <div class="col-3">
+                    <img src="assets/images/crystal_pink.jpg" id="crystal4" alt="crystal 4" class=".img-fluid img-thumbnail">
+                </div>
+            </div>
         </div>
         
-        <div id="total-score-text">Your total score is:</div>
-        <div id="total-score">0</div>
-
+        <div class="card p-1 mt-2 bg-info text-white">
+                <div class="card-body">
+                    <div id="total-score-text" class="container-fluid text-center">Your total score is:</div>
+                    <div id="total-score" class="container-fluid text-center">0</div>
+                </div>
+        </div>
 
 
     </div>
     <footer>
-        <a href="https://www.freepik.com/free-photos-vectors/design">Design vector created by freepik - www.freepik.com</a>
+      
     </footer>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
