@@ -11,7 +11,7 @@ var losses = 0;
 var totalScore = 0;
 var crystalValues = [0, 0, 0, 0];
 
-$('#number-to-match').html(goalNumber);
+$('#number-to-match').html("Goal: " + "<br>" + "<br>" + goalNumber);
 console.log(goalNumber);
 // When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
 // Each crystal should have a random hidden value between 1 - 12.
@@ -107,7 +107,7 @@ function restartGame(){
 // When the game begins again, the player should see a new goal number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
     totalScore = 0;
     goalNumber = Math.floor(Math.random() * (max-min+1)+min);
-    $('#number-to-match').html(goalNumber);
+    $('#number-to-match').html("Goal: " + "<br>" + "<br>" + goalNumber);
     crystalValue = setCrystalValue();
 }
 

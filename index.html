@@ -35,20 +35,26 @@
 
         <div class="container-fluid">
             <div class="row mt-2">
-                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <div class="col-3 card text-center m-3 bg-info text-white">
+                    <div class="card-body">
+                        <div id="number-to-match" class="font-weight-bold"></div>
+                    </div>
+                </div>
 
-                    <div class="col-3 card text-center">
-                        <div class="card-body">
-                            <div id="number-to-match" class="font-weight-bold "></div>
-                        </div>
+                <div class="card col-3 m-1 bg-success text-white font-weight-bold">
+                    <div class="card-body">
+                        <div id="total-score-text" class="container-fluid text-center ">Your Total Score:</div>
+                        <div id="total-score" class="container-fluid text-center">0</div>
                     </div>
-                    <div class="col-2"></div>
-                    <div id="tally" class="col-3 card text-center">
-                        <div class="card-body">
-                            <p id="wins">Wins: 0</p>
-                            <p id="losses">Losses: 0</p>
-                        </div>
+                </div>
+
+                <div id="tally" class="col-3 card m-3 text-center font-weight-bold bg-info text-white">
+                    <div class="card-body">
+                        <p id="wins">Wins: 0</p>
+                        <p id="losses">Losses: 0</p>
                     </div>
+                </div>
                
             </div>
         </div>
@@ -70,12 +76,7 @@
             </div>
         </div>
         
-        <div class="card p-1 mt-2 bg-info text-white">
-                <div class="card-body">
-                    <div id="total-score-text" class="container-fluid text-center">Your total score is:</div>
-                    <div id="total-score" class="container-fluid text-center">0</div>
-                </div>
-        </div>
+    
 
 
     </div>
