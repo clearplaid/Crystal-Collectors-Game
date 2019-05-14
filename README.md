@@ -1,4 +1,7 @@
-# Crystal-Collectors-Game https://clearplaid.github.io/Crystal-Collectors-Game/
+# Crystal-Collectors-Game 
+
+https://clearplaid.github.io/Crystal-Collectors-Game/
+
 You will be given a random number at the start of the game.
 
 There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
